@@ -12,9 +12,12 @@ const stocksApi = process.env.STOCKS_API || "finnhub.io";
 
 const port = process.env.PORT || "3000";
 
+app.get('/', (req, res) => res.send('Hello world'));
+app.listen(port, () => console.log(`API running on:${port}`));
+
 // COSMOS DB
 
-const CosmosClient = cosmos.CosmosClient;
+/*const CosmosClient = cosmos.CosmosClient;
 const endpoint = "https://dashboardinfodb.documents.azure.com:443/";
 const masterKey =
   "IS7nxMGZ1iThEQLNbSiLg0qVuq1MH0j9aJhDtPG6L003XbKHMwtugWXXomqut70LdQ52OiaHZw02ZT3dirX2EQ==";
@@ -102,3 +105,4 @@ app.get("*", (req, res) => {
 app.listen(port, () => console.log(`API running on localhost:${port}`));
 
 //getDataFromCosmosDb();
+*/
