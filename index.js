@@ -1,14 +1,14 @@
 const express = require("express");
-const cosmos = require("@azure/cosmos");
-const proxy = require("express-http-proxy");
-const cors = require("cors");
+//const cosmos = require("@azure/cosmos");
+//const proxy = require("express-http-proxy");
+//const cors = require("cors");
 
-const publicweb = process.env.PUBLICWEB || ".";
+//const publicweb = process.env.PUBLICWEB || ".";
 const app = express();
 
-const weatherApi = process.env.WEATHER_API || "http://api.weatherapi.com";
-const exchangeApi = process.env.EXCHANGE_API || "www.ecb.europa.eu";
-const stocksApi = process.env.STOCKS_API || "finnhub.io";
+//const weatherApi = process.env.WEATHER_API || "http://api.weatherapi.com";
+//const exchangeApi = process.env.EXCHANGE_API || "www.ecb.europa.eu";
+//const stocksApi = process.env.STOCKS_API || "finnhub.io";
 
 const port = process.env.PORT || "3000";
 
